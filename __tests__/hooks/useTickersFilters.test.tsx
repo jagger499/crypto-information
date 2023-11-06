@@ -10,14 +10,14 @@ describe('useTickersFilters', () => {
 
   const hookProps = {...mockUseTickerFiltersParams, setTickers, setReverse};
 
-  it('debe inicializar con valores predeterminados', () => {
+  it('should initialize with default values', () => {
     const {result} = renderHook(() => useTickersFilters(hookProps));
 
     expect(result.current.filter).toBe('rank');
     expect(result.current.loading).toBe(false);
   });
 
-  it('debe cambiar el filtro al hacer clic en el mismo filtro', async () => {
+  it('should change the filter when clicking the same filter', async () => {
     const {result} = renderHook(() => useTickersFilters(hookProps));
 
     await act(async () => {
@@ -28,7 +28,7 @@ describe('useTickersFilters', () => {
     expect(setReverse).toHaveBeenCalled();
   });
 
-  it('debe cambiar el filtro y orden al hacer clic en un nuevo filtro', async () => {
+  it('should change the filter and order when clicking a new filter', async () => {
     const {result} = renderHook(() => useTickersFilters(hookProps));
 
     await act(async () => {
@@ -40,7 +40,7 @@ describe('useTickersFilters', () => {
     expect(setTickers).toHaveBeenCalled();
   });
 
-  it('debe manejar la carga correctamente', async () => {
+  it('should handle loading correctly', async () => {
     const {result} = renderHook(() => useTickersFilters(hookProps));
 
     await act(async () => {

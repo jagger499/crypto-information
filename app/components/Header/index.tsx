@@ -22,11 +22,14 @@ export const Header = ({showFilters}: {showFilters: () => void}) => {
   const ReverseIcon = reverse ? ExpandLess : ExpandMore;
 
   return (
-    <View style={styles.header}>
+    <View testID="header" style={styles.header}>
       <View style={styles.section}>
         <Text style={commonStyles.txt_title}>ONE MILLION UP</Text>
       </View>
-      <Pressable onPress={showFilters} style={styles.section}>
+      <Pressable
+        testID="select-filter-column-header"
+        onPress={showFilters}
+        style={styles.section}>
         <Text style={commonStyles.txt}>Selected filters:</Text>
         <View style={styles.filter}>
           <Text style={commonStyles.txt}>
@@ -41,6 +44,7 @@ export const Header = ({showFilters}: {showFilters: () => void}) => {
       </Pressable>
       <View style={styles.section}>
         <Pressable
+          testID="rank-column-header"
           onPress={() => handlePressFilter({pressFilter: filters.rank})}
           style={commonStyles.rowRank}>
           <View style={styles.more}>
@@ -49,6 +53,7 @@ export const Header = ({showFilters}: {showFilters: () => void}) => {
           </View>
         </Pressable>
         <Pressable
+          testID="price-usd-column-header"
           onPress={() => handlePressFilter({pressFilter: filters.priceUSD})}
           style={commonStyles.rowFirst}>
           <View style={styles.more}>
@@ -57,6 +62,7 @@ export const Header = ({showFilters}: {showFilters: () => void}) => {
           </View>
         </Pressable>
         <Pressable
+          testID="price-btc-column-header"
           onPress={() => handlePressFilter({pressFilter: filters.priceBTC})}
           style={commonStyles.rowSecond}>
           <View style={styles.more}>
@@ -65,6 +71,7 @@ export const Header = ({showFilters}: {showFilters: () => void}) => {
           </View>
         </Pressable>
         <Pressable
+          testID="change-column-header"
           onPress={() => handlePressFilter({pressFilter: filters.change})}
           style={commonStyles.rowThird}>
           <View style={styles.more}>

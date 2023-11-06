@@ -24,6 +24,7 @@ export const TickerListItem = ({
 
   return (
     <Pressable
+      testID="item-list-component"
       onPress={() => setDetailModal({open: true, detail: item})}
       style={styles.tickerContainer}>
       <View style={commonStyles.rowRank}>

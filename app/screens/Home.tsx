@@ -35,10 +35,11 @@ export const Home = () => {
   const modalOpen = filterModal || detailModal.open;
 
   return (
-    <View style={styles.container}>
+    <View testID="home-screen" style={styles.container}>
       <Header showFilters={() => setFilterModal(true)} />
       {loading && (
         <View
+          testID="home-loading"
           style={[
             commonStyles.container,
             commonStyles.flex_center,

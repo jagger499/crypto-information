@@ -1,17 +1,19 @@
 /**
  * @format
  */
-
-import 'react-native';
 import React from 'react';
+import 'jest';
+import 'react-native';
+import {describe, it} from '@jest/globals';
+import {render} from '@testing-library/react-native';
+
 import App from '../App';
 
-// Note: import explicitly to use the types shiped with jest.
-import {it} from '@jest/globals';
+describe('App', () => {
+  it('renders without crashing and have inside the home screen component', () => {
+    const {getByTestId} = render(<App />);
+    const element = getByTestId('home-screen');
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
+    expect(element).toBeTruthy();
+  });
 });

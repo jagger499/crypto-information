@@ -1,7 +1,8 @@
 import {StyleSheet, TextStyle} from 'react-native';
 import {themes} from '../config/themes';
+
 /**
- * Objeto que contiene estilos comunes para la aplicación.
+ * Object that contains common styles for the application.
  */
 export const commonStyles = StyleSheet.create({
   container: {
@@ -12,10 +13,10 @@ export const commonStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  /**
-   * Estilos para textos.
-   */
 
+  /**
+   * Styles for text elements.
+   */
   txt: {
     color: themes.colors.danube[100],
     fontSize: 13,
@@ -44,7 +45,7 @@ export const commonStyles = StyleSheet.create({
   },
 
   /**
-   * Estilo para la vista de lista o tabla.
+   * Style for the list or table view.
    */
   rowRank: {
     flex: 0.15,

@@ -6,13 +6,13 @@ import {themes} from '../../config/themes';
 import {ITEM_SIZE} from '../TickerListItem/styles';
 
 /**
- * Componente TickerList
+ * TickerList Component
  *
- * Este componente muestra una lista de tickers en una FlatList animada.
+ * This component displays a list of tickers in an animated FlatList.
  *
- * @param props - Las propiedades del componente.
- * @param props.tickers - Un array de objetos Tickers que se mostrarán en la lista.
- * @param props.setDetailModal - Una función que permite abrir un modal de detalles para un ticker.
+ * @param props - Component properties.
+ * @param props.tickers - An array of Ticker objects to be displayed in the list.
+ * @param props.setDetailModal - A function that allows opening a details modal for a ticker.
  */
 export const TickerList = ({
   tickers,

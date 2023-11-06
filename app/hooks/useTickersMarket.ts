@@ -2,19 +2,20 @@ import {useState} from 'react';
 import {Market} from '../types';
 
 /**
- * Hook personalizado para obtener datos de mercado de un ticker.
+ * Custom hook for fetching market data for a ticker.
  *
- * Este hook se utiliza para obtener datos de mercado de una criptomoneda específica
- * identificada por su ID.
+ * This hook is used to retrieve market data for a specific cryptocurrency
+ * identified by its ID.
  *
- * @param {object} options - Opciones para el hook.
- * @param {string} options.id - El ID de la criptomoneda.
+ * @param {object} options - Options for the hook.
+ * @param {string} options.id - The ID of the cryptocurrency.
  *
- * @returns {object} - Un objeto que contiene:
- *  - `loading` (boolean): Indica si la solicitud de datos está en curso.
- *  - `markets` (Market[]): La lista de datos de mercado de la criptomoneda.
- *  - `fetchTickerMarketsData` (function): Función para buscar y actualizar los datos de mercado.
+ * @returns {object} - An object containing:
+ *  - `loading` (boolean): Indicates if the data request is in progress.
+ *  - `markets` (Market[]): The list of market data for the cryptocurrency.
+ *  - `fetchTickerMarketsData` (function): Function to fetch and update market data.
  */
+
 export const useTickersMarket = ({id}: {id: string}) => {
   const [markets, setMarkets] = useState<Market[]>([]);
   const [loading, setLoading] = useState(false);

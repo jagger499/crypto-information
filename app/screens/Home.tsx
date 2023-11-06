@@ -12,12 +12,12 @@ import {Tickers} from '../types';
 import {DetailModalProp} from '../types/components/detailModal';
 
 /**
- * Componente Home
+ * Home Component
  *
- * Este componente representa la página de inicio de la aplicación. Muestra una lista de tickers
- * y proporciona la funcionalidad de abrir un modal de filtro y un modal de detalles.
+ * This component represents the home page of the application. It displays a list of tickers
+ * and provides the functionality to open a filter modal and a details modal.
  *
- * @returns {JSX.Element} El componente de la página de inicio.
+ * @returns {JSX.Element} The home page component.
  */
 export const Home = () => {
   const [filterModal, setFilterModal] = useState(false);

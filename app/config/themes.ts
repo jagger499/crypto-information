@@ -5,7 +5,7 @@ export const {height, width} = Dimensions.get('window');
 const header_height = 140;
 
 /**
- * Temas de la aplicación que contienen información sobre colores, fuentes y tamaños.
+ * Application themes containing information about colors, fonts, and sizes.
  */
 export const themes = {
   colors: {

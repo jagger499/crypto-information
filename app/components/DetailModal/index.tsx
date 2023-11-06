@@ -17,10 +17,10 @@ import {Tickers} from '../../types';
 import Close from '../../assets/close.svg';
 
 /**
- * Componente para mostrar un modal de detalles de un ticker.
+ * Component for displaying a modal with details of a ticker.
  *
- * @param modalVisible - Indica si el modal está visible y los detalles del ticker.
- * @param setModalVisible - Función para actualizar la visibilidad del modal y los detalles del ticker.
+ * @param props.modalVisible - Indicates whether the modal is visible and the ticker details.
+ * @param props.setModalVisible - Function to update the visibility of the modal and the ticker details.
  */
 export const DetailModal = ({
   modalVisible,

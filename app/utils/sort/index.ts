@@ -1,12 +1,12 @@
 import {Tickers, TickersKeys} from '../../types';
 
 /**
- * Compara dos objetos del tipo Tickers por el valor numérico del campo especificado en orden descendente.
+ * Compares two objects of the Tickers type based on the numeric value of the specified field in descending order.
  *
- * @param field - El nombre del campo por el cual comparar los objetos Tickers.
- * @param a - El primer objeto Tickers a comparar.
- * @param b - El segundo objeto Tickers a comparar.
- * @returns Un número negativo si a[field] es mayor que b[field], un número positivo si b[field] es mayor que a[field], o 0 si son iguales.
+ * @param field - The name of the field by which to compare the Tickers objects.
+ * @param a - The first Tickers object to compare.
+ * @param b - The second Tickers object to compare.
+ * @returns A negative number if a[field] is greater than b[field, a positive number if b[field] is greater than a[field], or 0 if they are equal.
  */
 export const compareFieldNumericDesc = (field: TickersKeys) => {
   return function (a: Tickers, b: Tickers): number {
@@ -26,13 +26,13 @@ export const compareFieldNumericDesc = (field: TickersKeys) => {
 };
 
 /**
- * Compara dos objetos del tipo Tickers por un campo específico de forma ascendente.
+ * Compares two objects of type Tickers by a specific field in ascending order.
  *
- * @param field - El nombre del campo por el cual comparar los objetos.
- * @param a - El primer objeto a comparar.
- * @param b - El segundo objeto a comparar.
- * @returns Un número negativo si `a` es menor que `b`, un número positivo si `a` es mayor que `b`,
- *          o 0 si son iguales en función del valor del campo.
+ * @param field - The name of the field by which to compare the objects.
+ * @param a - The first object to compare.
+ * @param b - The second object to compare.
+ * @returns A negative number if `a` is less than `b`, a positive number if `a` is greater than `b`,
+ *          or 0 if they are equal based on the value of the field.
  */
 export const compareFieldNumericAsc = (field: TickersKeys) => {
   return function (a: Tickers, b: Tickers): number {

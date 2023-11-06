@@ -9,7 +9,7 @@ export enum filters {
 }
 
 /**
- * Interfaz que describe el estado del contexto de los tickers en la aplicación.
+ * Interface that describes the state of the tickers context in the application.
  */
 export type TickersState = {
   reverse: boolean;
@@ -29,9 +29,9 @@ export type TickersState = {
 };
 
 /**
- * Estado por defecto para el contexto de tickers.
+ * Default state for the tickers context.
  */
-const defaultState = {
+const defaultState: TickersState = {
   reverse: false,
   tickers: [],
   filter: filters.rank,
@@ -43,6 +43,6 @@ const defaultState = {
 };
 
 /**
- * Contexto de React que proporciona el estado de los tickers.
+ * React context that provides the state of the tickers.
  */
 export const TickersContext = React.createContext<TickersState>(defaultState);

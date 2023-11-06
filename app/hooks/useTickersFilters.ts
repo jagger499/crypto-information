@@ -6,14 +6,14 @@ import {compareFieldNumericAsc, compareFieldNumericDesc} from '../utils/sort';
 import {rangeToKey} from '../utils/rangeToKey';
 
 /**
- * Hook personalizado para gestionar filtros en una lista de Tickers.
+ * Custom hook for handling filters on a list of Tickers.
  *
- * @param props.tickers - La lista de Tickers a filtrar.
- * @param props.reverse - Indica si los resultados deben mostrarse en orden inverso.
- * @param props.changeRange - Rango de cambio a considerar en los filtros.
- * @param props.setTickers - Función para actualizar la lista de Tickers.
- * @param props.setReverse - Función para establecer el orden inverso.
- * @returns Un objeto con los Tickers filtrados, el filtro actual, la función para manejar el cambio de filtro y el estado de carga.
+ * @param props.tickers - The list of Tickers to filter.
+ * @param props.reverse - Indicates whether the results should be displayed in reverse order.
+ * @param props.changeRange - The range of change to consider in the filters.
+ * @param props.setTickers - Function to update the list of Tickers.
+ * @param props.setReverse - Function to set the reverse order.
+ * @returns An object with the filtered Tickers, the current filter, the function to handle filter changes, and the loading state.
  */
 export const useTickersFilters = ({
   tickers,

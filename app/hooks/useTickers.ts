@@ -2,14 +2,14 @@ import {useEffect, useState} from 'react';
 import {Tickers} from '../types';
 
 /**
- * Hook para obtener información de tickers de criptomonedas.
+ * Hook for retrieving cryptocurrency ticker information.
  *
- * @param {number} props.rankRange - Rango de clasificación de los tickers.
- * @param {number} props.changeRange - Rango de cambio de los tickers.
- * @param {(param: boolean) => void} props.setReverse - Función para establecer el orden inverso.
- * @param {(param: number) => void} props.setRankRange - Función para establecer el rango de clasificación.
- * @param {(param: number) => void} props.setChangeRange - Función para establecer el rango de cambio.
- * @returns {Object} - Objeto que contiene los datos y funciones relacionados con los tickers.
+ * @param {number} props.rankRange - Range of ticker ranking.
+ * @param {number} props.changeRange - Range of ticker change.
+ * @param {(param: boolean) => void} props.setReverse - Function to set the reverse order.
+ * @param {(param: number) => void} props.setRankRange - Function to set the ranking range.
+ * @param {(param: number) => void} props.setChangeRange - Function to set the change range.
+ * @returns {Object} - Object containing data and functions related to tickers.
  */
 export const useTickers = ({
   rankRange,

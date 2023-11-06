@@ -1,8 +1,7 @@
 import {Tickers} from '..';
 
 /**
- * Interfaz que define la estructura de las Props para el Detail
- * Modal mercado.
+ * Interface that defines the structure of Props for the Detail Modal in the market.
  */
 export type DetailModalProp = {
   open: boolean;

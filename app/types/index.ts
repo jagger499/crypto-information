@@ -1,5 +1,5 @@
 /**
- * Interfaz que representa un resultado de API.
+ * Interface that represents an API result.
  */
 export interface APIResult {
   data: Tickers[];
@@ -7,7 +7,7 @@ export interface APIResult {
 }
 
 /**
- * Tipo que representa los cambios posibles.
+ * Type representing possible changes.
  */
 export type change =
   | 'percent_change_7d'
@@ -15,7 +15,7 @@ export type change =
   | 'percent_change_1h';
 
 /**
- * Interfaz que define la estructura de un ticker.
+ * Interface defining the structure of a ticker.
  */
 export interface Tickers {
   id: string;
@@ -37,8 +37,7 @@ export interface Tickers {
 }
 
 /**
- * Tipo que enumera las claves posibles para los objetos de tipo Tickers.
- * excluyendo los que puedan ser de tipo null
+ * Type enumerating possible keys for Tickers objects, excluding those that can be of null type.
  */
 export type TickersKeys =
   | 'id'
@@ -62,7 +61,7 @@ export interface Info {
 }
 
 /**
- * Interfaz que define la estructura de un mercado.
+ * Interface defining the structure of a market.
  */
 export interface Market {
   name: string;

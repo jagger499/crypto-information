@@ -8,10 +8,10 @@ import {TickersContext} from '../../context/context';
 import {rangeToKey} from '../../utils/rangeToKey';
 
 /**
- * Componente para mostrar un elemento de lista de tickers.
+ * Component to display a ticker list item.
  *
- * @param item - Información del ticker que se mostrará.
- * @param setDetailModal - Función para abrir el modal de detalles.
+ * @param props.item - Ticker information to be displayed.
+ * @param props.setDetailModal - Function to open the details modal.
  */
 export const TickerListItem = ({
   item,

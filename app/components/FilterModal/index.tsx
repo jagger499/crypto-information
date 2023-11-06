@@ -21,10 +21,10 @@ export const FILTER_CHANGE = [
 ];
 
 /**
- * Componente que muestra un modal de filtros para seleccionar rangos de clasificación y cambio.
+ * Component that displays a filter modal for selecting rating and change ranges.
  *
- * @param modalVisible - Indica si el modal es visible.
- * @param setModalVisible - Función para establecer la visibilidad del modal.
+ * @param props.modalVisible - Indicates if the modal is visible.
+ * @param props.setModalVisible - Function to set the visibility of the modal.
  */
 export const FilterModal = ({
   modalVisible,

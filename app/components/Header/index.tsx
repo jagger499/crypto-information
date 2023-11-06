@@ -8,12 +8,12 @@ import {TickersContext, filters} from '../../context/context';
 import {FILTER_CHANGE, FILTER_TOP} from '../FilterModal';
 
 /**
- * Componente Header
+ * Header Component
  *
- * Este componente representa el encabezado de la aplicación y muestra información
- * sobre filtros y opciones de clasificación.
+ * This component represents the application header and displays information
+ * about filters and sorting options.
  *
- * @param showFilters - Función que se ejecuta al hacer clic en la sección de filtros.
+ * @param props.showFilters - Function that is executed when clicking on the filters section.
  */
 export const Header = ({showFilters}: {showFilters: () => void}) => {
   const {reverse, filter, rankRange, changeRange, handlePressFilter} =

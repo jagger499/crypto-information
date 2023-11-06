@@ -1,8 +1,8 @@
 /**
- * Comprueba si una cadena representa un número negativo.
+ * Checks if a string represents a negative number.
  *
- * @param str - La cadena que se va a evaluar como número.
- * @returns `true` si la cadena es un número negativo, de lo contrario, devuelve `false`.
+ * @param str - The string to be evaluated as a number.
+ * @returns `true` if the string is a negative number, otherwise returns `false`.
  */
 export const isStringNegative = (str: string): boolean => {
   const number = parseFloat(str);
@@ -15,10 +15,10 @@ export const isStringNegative = (str: string): boolean => {
 };
 
 /**
- * Pausa la ejecución durante un período de tiempo especificado.
+ * Pauses execution for a specified period of time.
  *
- * @param ms - El número de milisegundos que se deben esperar antes de que se reanude la ejecución.
- * @returns Una promesa que se resuelve después de la pausa especificada.
+ * @param ms - The number of milliseconds to wait before resuming execution.
+ * @returns A promise that resolves after the specified pause.
  */
 export const sleep = (ms: number) => {
   return new Promise(resolve => setTimeout(resolve, ms));

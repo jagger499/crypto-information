@@ -4,12 +4,12 @@ import {useTickers} from '../hooks/useTickers';
 import {useTickersFilters} from '../hooks/useTickersFilters';
 
 /**
- * Proveedor de datos de tickers para la aplicación.
- * Este componente proporciona acceso a los datos de tickers y las funciones de filtro.
+ * Ticker data provider for the application.
+ * This component provides access to ticker data and filtering functions.
  *
- * @param {Object} props - Propiedades del componente.
- * @param {ReactNode} props.children - Elementos hijos que se mostrarán dentro del proveedor.
- * @returns {JSX.Element} - Componente que envuelve a los elementos hijos con acceso a los datos de tickers.
+ * @param {Object} props - Component properties.
+ * @param {ReactNode} props.children - Child elements to be displayed within the provider.
+ * @returns {JSX.Element} - Component that wraps child elements with access to ticker data.
  */
 export const TickersProvider = ({children}: any) => {
   const [reverse, setReverse] = useState<boolean>(false);

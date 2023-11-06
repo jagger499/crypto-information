@@ -5,11 +5,11 @@ import {Home} from './app/screens/Home';
 import {TickersProvider} from './app/context';
 
 /**
- * Componente de la aplicación principal.
- * Este componente es la raíz de la aplicación y se encarga de proporcionar el contexto
- * de los "tickers" a toda la jerarquía de componentes debajo de él.
+ * Main application component.
+ * This component is the root of the application and is responsible for providing the context
+ * of the "tickers" to all the components hierarchy below it.
  *
- * @returns El elemento raíz de la aplicación que incluye el proveedor de "tickers" y el componente "Home".
+ * @returns The root element of the application that includes the "tickers" provider and the "Home" component.
  */
 function App() {
   return (

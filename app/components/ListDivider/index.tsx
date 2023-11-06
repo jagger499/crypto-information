@@ -3,14 +3,14 @@ import {styles} from './styles';
 import {View} from 'react-native';
 
 /**
- * Componente ListDivider
+ * ListDivider Component
  *
- * Este componente representa un divisor visual utilizado para separar elementos en una lista.
+ * This component represents a visual divider used to separate items in a list.
  *
  * @remarks
- * Este componente se utiliza para crear una línea divisoria en una lista o en una visual.
+ * This component is used to create a dividing line in a list or visual element.
  *
- * @returns Un elemento de vista (View) que actúa como divisor visual.
+ * @returns A View element that serves as a visual divider.
  */
 export const ListDivider = () => {
   return <View style={styles.divider} />;
